@@ -82,10 +82,12 @@ public class Person {
         return year - YOB;
     }
 
+//method to convert to CSV format
     public String toCSVDataRecord() {
         return firstName + "," + lastName + "," + ID + "," + title + "," + YOB;
     }
 
+    // Method to convert to JSON format
     public String toJSONDataRecord() {
         String retString = "";
         char DQ = '\u0022'; // Double quote character

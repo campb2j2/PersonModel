@@ -46,6 +46,8 @@ public class Product {
     public String toCSVDataRecord() {
         return name + "," + description + "," + ID + "," + cost;
     }
+
+    // Method to convert to JSON format
     public String toJSONDataRecord() {
         String retString = "";
         char DQ = '\u0022'; // Double quote character
